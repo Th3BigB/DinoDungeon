@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB9EB4321EB8CFA500B98F4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9EB4311EB8CFA500B98F4A /* main.m */; };
+		CB9EB4351EB8CFA500B98F4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9EB4341EB8CFA500B98F4A /* AppDelegate.m */; };
+		CB9EB4381EB8CFA500B98F4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9EB4371EB8CFA500B98F4A /* ViewController.m */; };
+		CB9EB43B1EB8CFA500B98F4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9EB4391EB8CFA500B98F4A /* Main.storyboard */; };
+		CB9EB43D1EB8CFA500B98F4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9EB43C1EB8CFA500B98F4A /* Assets.xcassets */; };
+		CB9EB4401EB8CFA500B98F4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB9EB43E1EB8CFA500B98F4A /* LaunchScreen.storyboard */; };
+		CB9EB44B1EB8CFA500B98F4A /* Dino_DungeonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9EB44A1EB8CFA500B98F4A /* Dino_DungeonTests.m */; };
+		CB9EB4561EB8CFA500B98F4A /* Dino_DungeonUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9EB4551EB8CFA500B98F4A /* Dino_DungeonUITests.m */; };
+		CB9EB46B1EB8ECE800B98F4A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB9EB46A1EB8ECE800B98F4A /* AudioToolbox.framework */; };
+		CBAEB6181EC1E3A100D40E9F /* BasicPlatform.png in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB6131EC1E3A100D40E9F /* BasicPlatform.png */; };
+		CBAEB6191EC1E3A100D40E9F /* BasicPlatform2.png in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB6141EC1E3A100D40E9F /* BasicPlatform2.png */; };
+		CBAEB61A1EC1E3A100D40E9F /* Dino.png in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB6151EC1E3A100D40E9F /* Dino.png */; };
+		CBAEB61B1EC1E3A100D40E9F /* Jump.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB6161EC1E3A100D40E9F /* Jump.mp4 */; };
+		CBAEB61C1EC1E3A100D40E9F /* Jump2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB6171EC1E3A100D40E9F /* Jump2.mp4 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB9EB4471EB8CFA500B98F4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB9EB4251EB8CFA500B98F4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB9EB42C1EB8CFA500B98F4A;
+			remoteInfo = "Dino Dungeon";
+		};
+		CB9EB4521EB8CFA500B98F4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB9EB4251EB8CFA500B98F4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB9EB42C1EB8CFA500B98F4A;
+			remoteInfo = "Dino Dungeon";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CB9EB42D1EB8CFA500B98F4A /* Dino Dungeon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dino Dungeon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB9EB4311EB8CFA500B98F4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CB9EB4331EB8CFA500B98F4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CB9EB4341EB8CFA500B98F4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CB9EB4361EB8CFA500B98F4A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CB9EB4371EB8CFA500B98F4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CB9EB43A1EB8CFA500B98F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB9EB43C1EB8CFA500B98F4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB9EB43F1EB8CFA500B98F4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB9EB4411EB8CFA500B98F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB9EB4461EB8CFA500B98F4A /* Dino DungeonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dino DungeonTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB9EB44A1EB8CFA500B98F4A /* Dino_DungeonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dino_DungeonTests.m; sourceTree = "<group>"; };
+		CB9EB44C1EB8CFA500B98F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB9EB4511EB8CFA500B98F4A /* Dino DungeonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dino DungeonUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB9EB4551EB8CFA500B98F4A /* Dino_DungeonUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dino_DungeonUITests.m; sourceTree = "<group>"; };
+		CB9EB4571EB8CFA500B98F4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB9EB46A1EB8ECE800B98F4A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		CBAEB6131EC1E3A100D40E9F /* BasicPlatform.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BasicPlatform.png; path = ../../../Documents/BasicPlatform.png; sourceTree = "<group>"; };
+		CBAEB6141EC1E3A100D40E9F /* BasicPlatform2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BasicPlatform2.png; path = ../../../Documents/BasicPlatform2.png; sourceTree = "<group>"; };
+		CBAEB6151EC1E3A100D40E9F /* Dino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dino.png; path = ../../../Documents/Dino.png; sourceTree = "<group>"; };
+		CBAEB6161EC1E3A100D40E9F /* Jump.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Jump.mp4; path = ../../../Documents/Jump.mp4; sourceTree = "<group>"; };
+		CBAEB6171EC1E3A100D40E9F /* Jump2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Jump2.mp4; path = ../../../Documents/Jump2.mp4; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB9EB42A1EB8CFA500B98F4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9EB46B1EB8ECE800B98F4A /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB9EB4431EB8CFA500B98F4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB9EB44E1EB8CFA500B98F4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB9EB4241EB8CFA500B98F4A = {
+			isa = PBXGroup;
+			children = (
+				CB9EB42F1EB8CFA500B98F4A /* Dino Dungeon */,
+				CB9EB4491EB8CFA500B98F4A /* Dino DungeonTests */,
+				CB9EB4541EB8CFA500B98F4A /* Dino DungeonUITests */,
+				CB9EB42E1EB8CFA500B98F4A /* Products */,
+				CB9EB4691EB8ECE800B98F4A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CB9EB42E1EB8CFA500B98F4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB9EB42D1EB8CFA500B98F4A /* Dino Dungeon.app */,
+				CB9EB4461EB8CFA500B98F4A /* Dino DungeonTests.xctest */,
+				CB9EB4511EB8CFA500B98F4A /* Dino DungeonUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB9EB42F1EB8CFA500B98F4A /* Dino Dungeon */ = {
+			isa = PBXGroup;
+			children = (
+				CB9EB4331EB8CFA500B98F4A /* AppDelegate.h */,
+				CB9EB4341EB8CFA500B98F4A /* AppDelegate.m */,
+				CB9EB4361EB8CFA500B98F4A /* ViewController.h */,
+				CB9EB4371EB8CFA500B98F4A /* ViewController.m */,
+				CB9EB4391EB8CFA500B98F4A /* Main.storyboard */,
+				CBAEB6131EC1E3A100D40E9F /* BasicPlatform.png */,
+				CBAEB6141EC1E3A100D40E9F /* BasicPlatform2.png */,
+				CBAEB6151EC1E3A100D40E9F /* Dino.png */,
+				CBAEB6161EC1E3A100D40E9F /* Jump.mp4 */,
+				CBAEB6171EC1E3A100D40E9F /* Jump2.mp4 */,
+				CB9EB43C1EB8CFA500B98F4A /* Assets.xcassets */,
+				CB9EB43E1EB8CFA500B98F4A /* LaunchScreen.storyboard */,
+				CB9EB4411EB8CFA500B98F4A /* Info.plist */,
+				CB9EB4301EB8CFA500B98F4A /* Supporting Files */,
+			);
+			path = "Dino Dungeon";
+			sourceTree = "<group>";
+		};
+		CB9EB4301EB8CFA500B98F4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB9EB4311EB8CFA500B98F4A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB9EB4491EB8CFA500B98F4A /* Dino DungeonTests */ = {
+			isa = PBXGroup;
+			children = (
+				CB9EB44A1EB8CFA500B98F4A /* Dino_DungeonTests.m */,
+				CB9EB44C1EB8CFA500B98F4A /* Info.plist */,
+			);
+			path = "Dino DungeonTests";
+			sourceTree = "<group>";
+		};
+		CB9EB4541EB8CFA500B98F4A /* Dino DungeonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CB9EB4551EB8CFA500B98F4A /* Dino_DungeonUITests.m */,
+				CB9EB4571EB8CFA500B98F4A /* Info.plist */,
+			);
+			path = "Dino DungeonUITests";
+			sourceTree = "<group>";
+		};
+		CB9EB4691EB8ECE800B98F4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB9EB46A1EB8ECE800B98F4A /* AudioToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB9EB42C1EB8CFA500B98F4A /* Dino Dungeon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB9EB45A1EB8CFA500B98F4A /* Build configuration list for PBXNativeTarget "Dino Dungeon" */;
+			buildPhases = (
+				CB9EB4291EB8CFA500B98F4A /* Sources */,
+				CB9EB42A1EB8CFA500B98F4A /* Frameworks */,
+				CB9EB42B1EB8CFA500B98F4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dino Dungeon";
+			productName = "Dino Dungeon";
+			productReference = CB9EB42D1EB8CFA500B98F4A /* Dino Dungeon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB9EB4451EB8CFA500B98F4A /* Dino DungeonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB9EB45D1EB8CFA500B98F4A /* Build configuration list for PBXNativeTarget "Dino DungeonTests" */;
+			buildPhases = (
+				CB9EB4421EB8CFA500B98F4A /* Sources */,
+				CB9EB4431EB8CFA500B98F4A /* Frameworks */,
+				CB9EB4441EB8CFA500B98F4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB9EB4481EB8CFA500B98F4A /* PBXTargetDependency */,
+			);
+			name = "Dino DungeonTests";
+			productName = "Dino DungeonTests";
+			productReference = CB9EB4461EB8CFA500B98F4A /* Dino DungeonTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CB9EB4501EB8CFA500B98F4A /* Dino DungeonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB9EB4601EB8CFA500B98F4A /* Build configuration list for PBXNativeTarget "Dino DungeonUITests" */;
+			buildPhases = (
+				CB9EB44D1EB8CFA500B98F4A /* Sources */,
+				CB9EB44E1EB8CFA500B98F4A /* Frameworks */,
+				CB9EB44F1EB8CFA500B98F4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB9EB4531EB8CFA500B98F4A /* PBXTargetDependency */,
+			);
+			name = "Dino DungeonUITests";
+			productName = "Dino DungeonUITests";
+			productReference = CB9EB4511EB8CFA500B98F4A /* Dino DungeonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB9EB4251EB8CFA500B98F4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Brent Kelly";
+				TargetAttributes = {
+					CB9EB42C1EB8CFA500B98F4A = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					CB9EB4451EB8CFA500B98F4A = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB9EB42C1EB8CFA500B98F4A;
+					};
+					CB9EB4501EB8CFA500B98F4A = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CB9EB42C1EB8CFA500B98F4A;
+					};
+				};
+			};
+			buildConfigurationList = CB9EB4281EB8CFA500B98F4A /* Build configuration list for PBXProject "Dino Dungeon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB9EB4241EB8CFA500B98F4A;
+			productRefGroup = CB9EB42E1EB8CFA500B98F4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB9EB42C1EB8CFA500B98F4A /* Dino Dungeon */,
+				CB9EB4451EB8CFA500B98F4A /* Dino DungeonTests */,
+				CB9EB4501EB8CFA500B98F4A /* Dino DungeonUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB9EB42B1EB8CFA500B98F4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBAEB61C1EC1E3A100D40E9F /* Jump2.mp4 in Resources */,
+				CB9EB4401EB8CFA500B98F4A /* LaunchScreen.storyboard in Resources */,
+				CB9EB43D1EB8CFA500B98F4A /* Assets.xcassets in Resources */,
+				CBAEB6181EC1E3A100D40E9F /* BasicPlatform.png in Resources */,
+				CBAEB61A1EC1E3A100D40E9F /* Dino.png in Resources */,
+				CB9EB43B1EB8CFA500B98F4A /* Main.storyboard in Resources */,
+				CBAEB6191EC1E3A100D40E9F /* BasicPlatform2.png in Resources */,
+				CBAEB61B1EC1E3A100D40E9F /* Jump.mp4 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB9EB4441EB8CFA500B98F4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB9EB44F1EB8CFA500B98F4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB9EB4291EB8CFA500B98F4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9EB4381EB8CFA500B98F4A /* ViewController.m in Sources */,
+				CB9EB4351EB8CFA500B98F4A /* AppDelegate.m in Sources */,
+				CB9EB4321EB8CFA500B98F4A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB9EB4421EB8CFA500B98F4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9EB44B1EB8CFA500B98F4A /* Dino_DungeonTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB9EB44D1EB8CFA500B98F4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9EB4561EB8CFA500B98F4A /* Dino_DungeonUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB9EB4481EB8CFA500B98F4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB9EB42C1EB8CFA500B98F4A /* Dino Dungeon */;
+			targetProxy = CB9EB4471EB8CFA500B98F4A /* PBXContainerItemProxy */;
+		};
+		CB9EB4531EB8CFA500B98F4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB9EB42C1EB8CFA500B98F4A /* Dino Dungeon */;
+			targetProxy = CB9EB4521EB8CFA500B98F4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB9EB4391EB8CFA500B98F4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB9EB43A1EB8CFA500B98F4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB9EB43E1EB8CFA500B98F4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB9EB43F1EB8CFA500B98F4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB9EB4581EB8CFA500B98F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB9EB4591EB8CFA500B98F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB9EB45B1EB8CFA500B98F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Dino Dungeon/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "th3bigb.Dino-Dungeon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CB9EB45C1EB8CFA500B98F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Dino Dungeon/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "th3bigb.Dino-Dungeon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CB9EB45E1EB8CFA500B98F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Dino DungeonTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "th3bigb.Dino-DungeonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dino Dungeon.app/Dino Dungeon";
+			};
+			name = Debug;
+		};
+		CB9EB45F1EB8CFA500B98F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Dino DungeonTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "th3bigb.Dino-DungeonTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dino Dungeon.app/Dino Dungeon";
+			};
+			name = Release;
+		};
+		CB9EB4611EB8CFA500B98F4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Dino DungeonUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "th3bigb.Dino-DungeonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Dino Dungeon";
+			};
+			name = Debug;
+		};
+		CB9EB4621EB8CFA500B98F4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Dino DungeonUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "th3bigb.Dino-DungeonUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Dino Dungeon";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB9EB4281EB8CFA500B98F4A /* Build configuration list for PBXProject "Dino Dungeon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB9EB4581EB8CFA500B98F4A /* Debug */,
+				CB9EB4591EB8CFA500B98F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB9EB45A1EB8CFA500B98F4A /* Build configuration list for PBXNativeTarget "Dino Dungeon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB9EB45B1EB8CFA500B98F4A /* Debug */,
+				CB9EB45C1EB8CFA500B98F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB9EB45D1EB8CFA500B98F4A /* Build configuration list for PBXNativeTarget "Dino DungeonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB9EB45E1EB8CFA500B98F4A /* Debug */,
+				CB9EB45F1EB8CFA500B98F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB9EB4601EB8CFA500B98F4A /* Build configuration list for PBXNativeTarget "Dino DungeonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB9EB4611EB8CFA500B98F4A /* Debug */,
+				CB9EB4621EB8CFA500B98F4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CB9EB4251EB8CFA500B98F4A /* Project object */;
+}

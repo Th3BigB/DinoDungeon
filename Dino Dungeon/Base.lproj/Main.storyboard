@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="9IO-PP-zHN">
+                                <rect key="frame" x="-20" y="335" width="704" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fkR-m1-HVh">
+                                <rect key="frame" x="477" y="126" width="143" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Jump">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="jumpSound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="otW-2s-7c5"/>
+                                    <action selector="jumpcode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WVj-3L-2FL"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dino.png" translatesAutoresizingMaskIntoConstraints="NO" id="2BA-f0-QkI">
+                                <rect key="frame" x="292" y="235" width="82" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7o-O2-TEM">
+                                <rect key="frame" x="20" y="220" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Left">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startleft" destination="BYZ-38-t0r" eventType="touchDown" id="rYo-kE-iV1"/>
+                                    <action selector="stopleft" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cpa-2a-NRc"/>
+                                    <action selector="stopleft" destination="BYZ-38-t0r" eventType="touchUpOutside" id="t35-8x-VsW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I96-Vl-ljH">
+                                <rect key="frame" x="139" y="220" width="100" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Right">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startright" destination="BYZ-38-t0r" eventType="touchDown" id="RRX-KL-hCh"/>
+                                    <action selector="stopright" destination="BYZ-38-t0r" eventType="touchUpOutside" id="QuG-9N-T67"/>
+                                    <action selector="stopright" destination="BYZ-38-t0r" eventType="touchUpInside" id="xSu-3W-kQ8"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="TtO-rh-nVi">
+                                <rect key="frame" x="398" y="265" width="81" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="Dino" destination="2BA-f0-QkI" id="y1b-Gq-uGA"/>
+                        <outlet property="Floor" destination="9IO-PP-zHN" id="Dpk-An-8Qk"/>
+                        <outlet property="Jump" destination="fkR-m1-HVh" id="vwD-hW-UWq"/>
+                        <outlet property="Left" destination="M7o-O2-TEM" id="fY7-Af-6dK"/>
+                        <outlet property="Right" destination="I96-Vl-ljH" id="n6y-N1-r4f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.18140929535232" y="138.40000000000001"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BasicPlatform.png" width="177" height="77"/>
+        <image name="Dino.png" width="293" height="264"/>
+    </resources>
+</document>
