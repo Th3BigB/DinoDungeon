@@ -21,6 +21,13 @@
 		CBAEB61A1EC1E3A100D40E9F /* Dino.png in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB6151EC1E3A100D40E9F /* Dino.png */; };
 		CBAEB61B1EC1E3A100D40E9F /* Jump.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB6161EC1E3A100D40E9F /* Jump.mp4 */; };
 		CBAEB61C1EC1E3A100D40E9F /* Jump2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB6171EC1E3A100D40E9F /* Jump2.mp4 */; };
+		CBAEB6201EC1F14900D40E9F /* MM Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB61F1EC1F14900D40E9F /* MM Background.jpg */; };
+		CBAEB6221EC41C7600D40E9F /* Brown Cobblestone Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB6211EC41C7600D40E9F /* Brown Cobblestone Background.jpg */; };
+		CBAEB6241EC41D8500D40E9F /* Grey Cobblestone Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB6231EC41D8500D40E9F /* Grey Cobblestone Background.jpg */; };
+		CBAEB6261EC429F900D40E9F /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBAEB6251EC429F900D40E9F /* SpriteKit.framework */; };
+		CBAEB62A1ECA0D4A00D40E9F /* Dino Dungeon Game Music.wav in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB6271ECA0D4A00D40E9F /* Dino Dungeon Game Music.wav */; };
+		CBAEB62B1ECA0D4A00D40E9F /* Egg.png in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB6281ECA0D4A00D40E9F /* Egg.png */; };
+		CBAEB62C1ECA0D4A00D40E9F /* Spikes.png in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB6291ECA0D4A00D40E9F /* Spikes.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +70,13 @@
 		CBAEB6151EC1E3A100D40E9F /* Dino.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Dino.png; path = ../../../Documents/Dino.png; sourceTree = "<group>"; };
 		CBAEB6161EC1E3A100D40E9F /* Jump.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Jump.mp4; path = ../../../Documents/Jump.mp4; sourceTree = "<group>"; };
 		CBAEB6171EC1E3A100D40E9F /* Jump2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = Jump2.mp4; path = ../../../Documents/Jump2.mp4; sourceTree = "<group>"; };
+		CBAEB61F1EC1F14900D40E9F /* MM Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "MM Background.jpg"; path = "../../../Documents/MM Background.jpg"; sourceTree = "<group>"; };
+		CBAEB6211EC41C7600D40E9F /* Brown Cobblestone Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Brown Cobblestone Background.jpg"; path = "../../../Documents/Brown Cobblestone Background.jpg"; sourceTree = "<group>"; };
+		CBAEB6231EC41D8500D40E9F /* Grey Cobblestone Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "Grey Cobblestone Background.jpg"; path = "../../../Documents/Grey Cobblestone Background.jpg"; sourceTree = "<group>"; };
+		CBAEB6251EC429F900D40E9F /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		CBAEB6271ECA0D4A00D40E9F /* Dino Dungeon Game Music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Dino Dungeon Game Music.wav"; path = "../../../Documents/Dino Dungeon Game Music.wav"; sourceTree = "<group>"; };
+		CBAEB6281ECA0D4A00D40E9F /* Egg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Egg.png; path = ../../../Documents/Egg.png; sourceTree = "<group>"; };
+		CBAEB6291ECA0D4A00D40E9F /* Spikes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Spikes.png; path = ../../../Documents/Spikes.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBAEB6261EC429F900D40E9F /* SpriteKit.framework in Frameworks */,
 				CB9EB46B1EB8ECE800B98F4A /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -119,12 +134,18 @@
 				CB9EB4341EB8CFA500B98F4A /* AppDelegate.m */,
 				CB9EB4361EB8CFA500B98F4A /* ViewController.h */,
 				CB9EB4371EB8CFA500B98F4A /* ViewController.m */,
+				CBAEB6271ECA0D4A00D40E9F /* Dino Dungeon Game Music.wav */,
+				CBAEB6281ECA0D4A00D40E9F /* Egg.png */,
+				CBAEB6291ECA0D4A00D40E9F /* Spikes.png */,
+				CBAEB6211EC41C7600D40E9F /* Brown Cobblestone Background.jpg */,
 				CB9EB4391EB8CFA500B98F4A /* Main.storyboard */,
+				CBAEB6231EC41D8500D40E9F /* Grey Cobblestone Background.jpg */,
 				CBAEB6131EC1E3A100D40E9F /* BasicPlatform.png */,
 				CBAEB6141EC1E3A100D40E9F /* BasicPlatform2.png */,
 				CBAEB6151EC1E3A100D40E9F /* Dino.png */,
 				CBAEB6161EC1E3A100D40E9F /* Jump.mp4 */,
 				CBAEB6171EC1E3A100D40E9F /* Jump2.mp4 */,
+				CBAEB61F1EC1F14900D40E9F /* MM Background.jpg */,
 				CB9EB43C1EB8CFA500B98F4A /* Assets.xcassets */,
 				CB9EB43E1EB8CFA500B98F4A /* LaunchScreen.storyboard */,
 				CB9EB4411EB8CFA500B98F4A /* Info.plist */,
@@ -162,6 +183,7 @@
 		CB9EB4691EB8ECE800B98F4A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CBAEB6251EC429F900D40E9F /* SpriteKit.framework */,
 				CB9EB46A1EB8ECE800B98F4A /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
@@ -273,12 +295,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBAEB62A1ECA0D4A00D40E9F /* Dino Dungeon Game Music.wav in Resources */,
+				CBAEB6201EC1F14900D40E9F /* MM Background.jpg in Resources */,
+				CBAEB62C1ECA0D4A00D40E9F /* Spikes.png in Resources */,
 				CBAEB61C1EC1E3A100D40E9F /* Jump2.mp4 in Resources */,
 				CB9EB4401EB8CFA500B98F4A /* LaunchScreen.storyboard in Resources */,
 				CB9EB43D1EB8CFA500B98F4A /* Assets.xcassets in Resources */,
+				CBAEB6221EC41C7600D40E9F /* Brown Cobblestone Background.jpg in Resources */,
+				CBAEB62B1ECA0D4A00D40E9F /* Egg.png in Resources */,
 				CBAEB6181EC1E3A100D40E9F /* BasicPlatform.png in Resources */,
 				CBAEB61A1EC1E3A100D40E9F /* Dino.png in Resources */,
 				CB9EB43B1EB8CFA500B98F4A /* Main.storyboard in Resources */,
+				CBAEB6241EC41D8500D40E9F /* Grey Cobblestone Background.jpg in Resources */,
 				CBAEB6191EC1E3A100D40E9F /* BasicPlatform2.png in Resources */,
 				CBAEB61B1EC1E3A100D40E9F /* Jump.mp4 in Resources */,
 			);

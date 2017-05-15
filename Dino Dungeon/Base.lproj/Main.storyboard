@@ -10,17 +10,71 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="arQ-eD-0fa">
+            <objects>
+                <viewController id="clW-nY-EQ6" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HTu-ZL-u5O"/>
+                        <viewControllerLayoutGuide type="bottom" id="2eL-hG-Y1c"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P3y-Pd-UGJ">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MM Background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hbX-2Q-yK7">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ka5-BO-beQ">
+                                <rect key="frame" x="258" y="158" width="150" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="noO-b6-1EU"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="DINO DUNGEON" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vod-Vw-5BO">
+                                <rect key="frame" x="139" y="82" width="389" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sL6-dj-aQ2">
+                                <rect key="frame" x="258" y="254" width="150" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="HOW TO PLAY">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sP3-DG-7CB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77.023988005997012" y="-1287.7546666666667"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="OCu-yQ-mhh"/>
+                        <viewControllerLayoutGuide type="bottom" id="uFq-1j-bJM"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Grey Cobblestone Background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xJe-LM-YNM">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="9IO-PP-zHN">
                                 <rect key="frame" x="-20" y="335" width="704" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -37,10 +91,6 @@
                                     <action selector="jumpcode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WVj-3L-2FL"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dino.png" translatesAutoresizingMaskIntoConstraints="NO" id="2BA-f0-QkI">
-                                <rect key="frame" x="292" y="235" width="82" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7o-O2-TEM">
                                 <rect key="frame" x="20" y="220" width="100" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -68,7 +118,19 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="TtO-rh-nVi">
-                                <rect key="frame" x="398" y="265" width="81" height="40"/>
+                                <rect key="frame" x="331" y="302" width="50" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="dLR-k5-7SD">
+                                <rect key="frame" x="405" y="287" width="50" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Spikes.png" translatesAutoresizingMaskIntoConstraints="NO" id="NlK-85-gRk">
+                                <rect key="frame" x="534" y="297" width="50" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dino.png" translatesAutoresizingMaskIntoConstraints="NO" id="2BA-f0-QkI">
+                                <rect key="frame" x="283" y="287" width="40" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -79,16 +141,22 @@
                         <outlet property="Floor" destination="9IO-PP-zHN" id="Dpk-An-8Qk"/>
                         <outlet property="Jump" destination="fkR-m1-HVh" id="vwD-hW-UWq"/>
                         <outlet property="Left" destination="M7o-O2-TEM" id="fY7-Af-6dK"/>
+                        <outlet property="Platform" destination="TtO-rh-nVi" id="QRc-Hm-0sh"/>
+                        <outlet property="Platform2" destination="dLR-k5-7SD" id="WgF-Yc-xz8"/>
                         <outlet property="Right" destination="I96-Vl-ljH" id="n6y-N1-r4f"/>
+                        <outlet property="Spikes" destination="NlK-85-gRk" id="Esx-JC-jdE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.18140929535232" y="138.40000000000001"/>
+            <point key="canvasLocation" x="76.911544227886068" y="-386.39999999999998"/>
         </scene>
     </scenes>
     <resources>
         <image name="BasicPlatform.png" width="177" height="77"/>
         <image name="Dino.png" width="293" height="264"/>
+        <image name="Grey Cobblestone Background.jpg" width="626" height="626"/>
+        <image name="MM Background.jpg" width="2880" height="1800"/>
+        <image name="Spikes.png" width="177" height="125"/>
     </resources>
 </document>

@@ -14,7 +14,6 @@
 
 @implementation ViewController
 
-
 -(IBAction)jumpSound:(id)sender
 {
     AudioServicesPlaySystemSound(jumpButton);
@@ -22,7 +21,7 @@
 
 -(IBAction)jumpcode:(id)sender
 {
-    jumpvalue = 30;
+    jumpvalue = 25;
 }
 
 -(void)fallingcode
@@ -32,13 +31,35 @@
     
     if(CGRectIntersectsRect(Dino.frame, Floor.frame)){
         jumpvalue = 0;
-        Dino.center = CGPointMake(Dino.center.x, Floor.center.y - 70);
+        Dino.center = CGPointMake(Dino.center.x, Floor.center.y - 45);
+        
+    }
+    
+    
+        if (CGRectIntersectsRect(Dino.frame, Platform.frame)){
+            jumpvalue = 0;
+            Dino.center = CGPointMake(Dino.center.x, Platform.center.y - 35);
+    
+    }
+    
+        if (CGRectIntersectsRect(Dino.frame, Platform2.frame)){
+            jumpvalue = 0;
+            Dino.center = CGPointMake(Dino.center.x, Platform2.center.y - 35);
+        
     }
 }
 
 
 -(void)goleft{
     Dino.center = CGPointMake(Dino.center.x - 7, Dino.center.y);
+    
+    if(CGRectIntersectsRect(Dino.frame, Platform.frame)){
+        Dino.center = CGPointMake(Dino.center.x + 7, Platform.center.y);
+    }
+    
+    if(CGRectIntersectsRect(Dino.frame, Platform2.frame)){
+        Dino.center = CGPointMake(Dino.center.x + 7, Platform2.center.y);
+    }
 }
 
 -(IBAction)startleft
@@ -55,6 +76,14 @@
 
 -(void)goright{
     Dino.center = CGPointMake(Dino.center.x + 7, Dino.center.y);
+    
+    if(CGRectIntersectsRect(Dino.frame, Platform.frame)){
+        Dino.center = CGPointMake(Dino.center.x - 7, Platform.center.y);
+    }
+    
+    if(CGRectIntersectsRect(Dino.frame, Platform2.frame)){
+        Dino.center = CGPointMake(Dino.center.x - 7, Platform2.center.y);
+    }
 }
 
 -(IBAction)startright
@@ -81,8 +110,6 @@
     
     fallingtimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(fallingcode) userInfo:nil repeats:YES];
     
-    
-    
 }
 
 
@@ -90,6 +117,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
 
 
 @end
