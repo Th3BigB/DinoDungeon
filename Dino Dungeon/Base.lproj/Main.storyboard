@@ -91,6 +91,10 @@
                                     <action selector="jumpcode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WVj-3L-2FL"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dino.png" translatesAutoresizingMaskIntoConstraints="NO" id="2BA-f0-QkI">
+                                <rect key="frame" x="283" y="287" width="40" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7o-O2-TEM">
                                 <rect key="frame" x="20" y="220" width="100" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -125,12 +129,15 @@
                                 <rect key="frame" x="405" y="287" width="50" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Spikes.png" translatesAutoresizingMaskIntoConstraints="NO" id="NlK-85-gRk">
-                                <rect key="frame" x="534" y="297" width="50" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EhN-nW-NHB">
+                                <rect key="frame" x="622" y="20" width="25" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dino.png" translatesAutoresizingMaskIntoConstraints="NO" id="2BA-f0-QkI">
-                                <rect key="frame" x="283" y="287" width="40" height="50"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Spikes.png" translatesAutoresizingMaskIntoConstraints="NO" id="NlK-85-gRk">
+                                <rect key="frame" x="189" y="297" width="50" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -141,6 +148,7 @@
                         <outlet property="Floor" destination="9IO-PP-zHN" id="Dpk-An-8Qk"/>
                         <outlet property="Jump" destination="fkR-m1-HVh" id="vwD-hW-UWq"/>
                         <outlet property="Left" destination="M7o-O2-TEM" id="fY7-Af-6dK"/>
+                        <outlet property="Life" destination="EhN-nW-NHB" id="z3Y-HQ-xWV"/>
                         <outlet property="Platform" destination="TtO-rh-nVi" id="QRc-Hm-0sh"/>
                         <outlet property="Platform2" destination="dLR-k5-7SD" id="WgF-Yc-xz8"/>
                         <outlet property="Right" destination="I96-Vl-ljH" id="n6y-N1-r4f"/>

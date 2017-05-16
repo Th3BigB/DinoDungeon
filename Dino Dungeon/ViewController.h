@@ -27,6 +27,8 @@ int life;
     IBOutlet UIButton *Left;
     IBOutlet UIButton *Right;
     
+    IBOutlet UILabel *Life;
+    
     NSTimer *fallingtimer;
     NSTimer *lefttimer;
     NSTimer *righttimer;
@@ -50,7 +52,6 @@ int life;
 -(void)fallingcode;
 -(IBAction)jumpcode:(id)sender;
 -(IBAction)jumpSound:(id)sender;
-
 
 
 @end

@@ -45,10 +45,20 @@
         if (CGRectIntersectsRect(Dino.frame, Platform2.frame)){
             jumpvalue = 0;
             Dino.center = CGPointMake(Dino.center.x, Platform2.center.y - 35);
-        
+    }
+    
+        if (CGRectIntersectsRect(Dino.frame, Spikes.frame)){
+            life = life - 1;
+            [Spikes removeFromSuperview];
+        if (life >= 0) {
+            Life.text = [NSString stringWithFormat:@"%i", life];
+            }
+            
+        else{
+            //Game Over Code
+            }
     }
 }
-
 
 -(void)goleft{
     Dino.center = CGPointMake(Dino.center.x - 7, Dino.center.y);
@@ -100,14 +110,16 @@
 
 - (void)viewDidLoad {
     
+    life = 3;
+    Life.text = [NSString stringWithFormat:@"%i", life];
+    
+    
     NSURL * jumpSound = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"Jump" ofType:@"mp4"]];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)jumpSound, & jumpButton);
     
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    
-    
-    
+        
     fallingtimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(fallingcode) userInfo:nil repeats:YES];
     
 }
