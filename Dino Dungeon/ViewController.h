@@ -22,6 +22,15 @@ int life;
   //IBOutletCollection (UIImageView) NSArray *Platform;//
     IBOutlet UIImageView *Platform;
     IBOutlet UIImageView *Platform2;
+    IBOutlet UIImageView *Platform3;
+    IBOutlet UIImageView *Platform4;
+    IBOutlet UIImageView *Platform5;
+    IBOutlet UIImageView *Platform6;
+    IBOutlet UIImageView *Platform7;
+    IBOutlet UIImageView *Platform8;
+    IBOutlet UIImageView *Platform9;
+    IBOutlet UIImageView *Platform10;
+    
    
     IBOutlet UIButton *Jump;
     IBOutlet UIButton *Left;

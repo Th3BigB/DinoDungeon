@@ -28,6 +28,8 @@
 		CBAEB62A1ECA0D4A00D40E9F /* Dino Dungeon Game Music.wav in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB6271ECA0D4A00D40E9F /* Dino Dungeon Game Music.wav */; };
 		CBAEB62B1ECA0D4A00D40E9F /* Egg.png in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB6281ECA0D4A00D40E9F /* Egg.png */; };
 		CBAEB62C1ECA0D4A00D40E9F /* Spikes.png in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB6291ECA0D4A00D40E9F /* Spikes.png */; };
+		CBC595FC1ECC131700D0781D /* Mute Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CBC595FA1ECC131700D0781D /* Mute Icon.png */; };
+		CBC595FD1ECC131700D0781D /* Sound Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CBC595FB1ECC131700D0781D /* Sound Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +79,8 @@
 		CBAEB6271ECA0D4A00D40E9F /* Dino Dungeon Game Music.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Dino Dungeon Game Music.wav"; path = "../../../Documents/Dino Dungeon Game Music.wav"; sourceTree = "<group>"; };
 		CBAEB6281ECA0D4A00D40E9F /* Egg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Egg.png; path = ../../../Documents/Egg.png; sourceTree = "<group>"; };
 		CBAEB6291ECA0D4A00D40E9F /* Spikes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Spikes.png; path = ../../../Documents/Spikes.png; sourceTree = "<group>"; };
+		CBC595FA1ECC131700D0781D /* Mute Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mute Icon.png"; path = "../../../Documents/Mute Icon.png"; sourceTree = "<group>"; };
+		CBC595FB1ECC131700D0781D /* Sound Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Sound Icon.png"; path = "../../../Documents/Sound Icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,8 @@
 				CBAEB6291ECA0D4A00D40E9F /* Spikes.png */,
 				CBAEB6211EC41C7600D40E9F /* Brown Cobblestone Background.jpg */,
 				CB9EB4391EB8CFA500B98F4A /* Main.storyboard */,
+				CBC595FA1ECC131700D0781D /* Mute Icon.png */,
+				CBC595FB1ECC131700D0781D /* Sound Icon.png */,
 				CBAEB6231EC41D8500D40E9F /* Grey Cobblestone Background.jpg */,
 				CBAEB6131EC1E3A100D40E9F /* BasicPlatform.png */,
 				CBAEB6141EC1E3A100D40E9F /* BasicPlatform2.png */,
@@ -298,6 +304,7 @@
 				CBAEB62A1ECA0D4A00D40E9F /* Dino Dungeon Game Music.wav in Resources */,
 				CBAEB6201EC1F14900D40E9F /* MM Background.jpg in Resources */,
 				CBAEB62C1ECA0D4A00D40E9F /* Spikes.png in Resources */,
+				CBC595FD1ECC131700D0781D /* Sound Icon.png in Resources */,
 				CBAEB61C1EC1E3A100D40E9F /* Jump2.mp4 in Resources */,
 				CB9EB4401EB8CFA500B98F4A /* LaunchScreen.storyboard in Resources */,
 				CB9EB43D1EB8CFA500B98F4A /* Assets.xcassets in Resources */,
@@ -305,6 +312,7 @@
 				CBAEB62B1ECA0D4A00D40E9F /* Egg.png in Resources */,
 				CBAEB6181EC1E3A100D40E9F /* BasicPlatform.png in Resources */,
 				CBAEB61A1EC1E3A100D40E9F /* Dino.png in Resources */,
+				CBC595FC1ECC131700D0781D /* Mute Icon.png in Resources */,
 				CB9EB43B1EB8CFA500B98F4A /* Main.storyboard in Resources */,
 				CBAEB6241EC41D8500D40E9F /* Grey Cobblestone Background.jpg in Resources */,
 				CBAEB6191EC1E3A100D40E9F /* BasicPlatform2.png in Resources */,
