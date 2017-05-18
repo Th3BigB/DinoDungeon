@@ -12,13 +12,13 @@
 int jumpvalue;
 int life;
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<UIAlertViewDelegate>
 {
     IBOutlet UIImageView *Dino;
     IBOutlet UIImageView *Spikes;
     IBOutlet UIImageView *Egg;
     IBOutlet UIImageView *Floor;
+    IBOutlet UIImageView *Fall;
   //IBOutletCollection (UIImageView) NSArray *Platform;//
     IBOutlet UIImageView *Platform;
     IBOutlet UIImageView *Platform2;
@@ -31,7 +31,6 @@ int life;
     IBOutlet UIImageView *Platform9;
     IBOutlet UIImageView *Platform10;
     
-   
     IBOutlet UIButton *Jump;
     IBOutlet UIButton *Left;
     IBOutlet UIButton *Right;
@@ -43,6 +42,9 @@ int life;
     NSTimer *righttimer;
 
     SystemSoundID jumpButton;
+    SystemSoundID Damage;
+    SystemSoundID Falling;
+    SystemSoundID eggCollect;
     
 }
 
@@ -61,7 +63,9 @@ int life;
 -(void)fallingcode;
 -(IBAction)jumpcode:(id)sender;
 -(IBAction)jumpSound:(id)sender;
-
+-(IBAction)damageSound:(id)sender;
+-(IBAction)fallSound:(id)sender;
+-(IBAction)eggSound:(id)sender;
 
 @end
 

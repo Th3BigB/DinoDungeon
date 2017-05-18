@@ -19,9 +19,24 @@
     AudioServicesPlaySystemSound(jumpButton);
 }
 
+-(IBAction)eggSound:(id)sender
+{
+    AudioServicesPlaySystemSound(eggCollect);
+}
+
+-(IBAction)damageSound:(id)sender
+{
+    AudioServicesPlaySystemSound(Damage);
+}
+
+-(IBAction)fallSound:(id)sender
+{
+    AudioServicesPlaySystemSound(Falling);
+}
+
 -(IBAction)jumpcode:(id)sender
 {
-    jumpvalue = 25;
+    jumpvalue = 28;
     Jump.enabled = NO;
     double delayInSeconds = 0.35;
     dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, delayInSeconds * NSEC_PER_SEC);
@@ -38,13 +53,11 @@
     if(CGRectIntersectsRect(Dino.frame, Floor.frame)){
         jumpvalue = 0;
         Dino.center = CGPointMake(Dino.center.x, Floor.center.y - 45);
-        
     }
     
         if (CGRectIntersectsRect(Dino.frame, Platform.frame)){
             jumpvalue = 0;
             Dino.center = CGPointMake(Dino.center.x, Platform.center.y - 35);
-    
     }
     
         if (CGRectIntersectsRect(Dino.frame, Platform2.frame)){
@@ -93,10 +106,14 @@
     }
     
     if (CGRectIntersectsRect(Dino.frame, Egg.frame)){
-        [Egg removeFromSuperview];
+        Egg.center = CGPointMake(Egg.center.x, Egg.center.y - 500);
+        AudioServicesPlaySystemSound(eggCollect);
         NSString *title = @"LEVEL COMPLETED";
         NSString *message = @"You retrieved the stolen egg!";
-        NSString *option = @"Next Level";
+        NSString *option = @"Back to Level Select!";
+        Left.enabled = NO;
+        Right.enabled = NO;
+        Jump.enabled = NO;
         
         UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
         UIAlertAction *button = [UIAlertAction actionWithTitle:option style:UIAlertActionStyleCancel handler:nil];
@@ -104,17 +121,65 @@
         
         [self presentViewController:alert animated:YES completion:nil];
     }
+    
+    if (CGRectIntersectsRect(Dino.frame, Fall.frame)){
+        
+        life = life - 4;
+        AudioServicesPlaySystemSound(Falling);
+        Fall.center = CGPointMake(Fall.center.x, Fall.center.y - 500);
+        
+        Left.enabled = NO;
+        Right.enabled = NO;
+        Jump.enabled = NO;
+        
+        if (life >= 0) {
+            Life.text = [NSString stringWithFormat:@"%i", life];
+        }
+        
+        else{
+            //Game Over Code
+            NSString *title = @"GAME OVER";
+            NSString *message = @"You have fallen and died!";
+            NSString *option = @"Back to Level Select";
+            
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *button = [UIAlertAction actionWithTitle:option style:UIAlertActionStyleCancel handler:nil];
+            [alert addAction:button];
+            
+            [self presentViewController:alert animated:YES completion:nil];
+            
+            if (button){
+                
+            }
+        }
 
+    }
     
         if (CGRectIntersectsRect(Dino.frame, Spikes.frame)){
+            
             life = life - 1;
-            [Spikes removeFromSuperview];
-        if (life >= 0) {
+            AudioServicesPlaySystemSound(Damage);
+            
+            Spikes.center = CGPointMake(Spikes.center.x, Spikes.center.y - 500);
+            
+        if (life >= 1) {
             Life.text = [NSString stringWithFormat:@"%i", life];
             }
             
         else{
             //Game Over Code
+            NSString *title = @"GAME OVER";
+            NSString *message = @"You have died!";
+            NSString *option = @"Back to Level Select";
+            
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
+            UIAlertAction *button = [UIAlertAction actionWithTitle:option style:UIAlertActionStyleCancel handler:nil];
+            [alert addAction:button];
+
+            if (button){
+                UIViewController* levelController = [[UIViewController alloc] init];
+                [self presentViewController:levelController animated:YES completion:nil];
+            }
             }
             
             }
@@ -241,6 +306,15 @@
     
     NSURL * jumpSound = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"Jump" ofType:@"mp4"]];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)jumpSound, & jumpButton);
+    
+    NSURL * damageSound = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"DamageSound" ofType:@"wav"]];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)damageSound, & Damage);
+    
+    NSURL * fallSound = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"FallingSound" ofType:@"wav"]];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)fallSound, & Falling);
+    
+    NSURL * eggSound = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"Egg Collect Sound" ofType:@"wav"]];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)eggSound, & eggCollect);
     
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.

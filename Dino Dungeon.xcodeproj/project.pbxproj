@@ -30,6 +30,11 @@
 		CBAEB62C1ECA0D4A00D40E9F /* Spikes.png in Resources */ = {isa = PBXBuildFile; fileRef = CBAEB6291ECA0D4A00D40E9F /* Spikes.png */; };
 		CBC595FC1ECC131700D0781D /* Mute Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CBC595FA1ECC131700D0781D /* Mute Icon.png */; };
 		CBC595FD1ECC131700D0781D /* Sound Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CBC595FB1ECC131700D0781D /* Sound Icon.png */; };
+		CBCB133D1ECD8CDD00E7C391 /* DamageSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = CBCB13391ECD8CDD00E7C391 /* DamageSound.wav */; };
+		CBCB133E1ECD8CDD00E7C391 /* Egg Collect Sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = CBCB133A1ECD8CDD00E7C391 /* Egg Collect Sound.wav */; };
+		CBCB133F1ECD8CDD00E7C391 /* FallingSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = CBCB133B1ECD8CDD00E7C391 /* FallingSound.wav */; };
+		CBCB13401ECD8CDD00E7C391 /* Life.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCB133C1ECD8CDD00E7C391 /* Life.png */; };
+		CBCB13441ECE02CC00E7C391 /* Back Button.png in Resources */ = {isa = PBXBuildFile; fileRef = CBCB13431ECE02CC00E7C391 /* Back Button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +86,11 @@
 		CBAEB6291ECA0D4A00D40E9F /* Spikes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Spikes.png; path = ../../../Documents/Spikes.png; sourceTree = "<group>"; };
 		CBC595FA1ECC131700D0781D /* Mute Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Mute Icon.png"; path = "../../../Documents/Mute Icon.png"; sourceTree = "<group>"; };
 		CBC595FB1ECC131700D0781D /* Sound Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Sound Icon.png"; path = "../../../Documents/Sound Icon.png"; sourceTree = "<group>"; };
+		CBCB13391ECD8CDD00E7C391 /* DamageSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = DamageSound.wav; path = ../../../Documents/DamageSound.wav; sourceTree = "<group>"; };
+		CBCB133A1ECD8CDD00E7C391 /* Egg Collect Sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Egg Collect Sound.wav"; path = "../../../Documents/Egg Collect Sound.wav"; sourceTree = "<group>"; };
+		CBCB133B1ECD8CDD00E7C391 /* FallingSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = FallingSound.wav; path = ../../../Documents/FallingSound.wav; sourceTree = "<group>"; };
+		CBCB133C1ECD8CDD00E7C391 /* Life.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Life.png; path = ../../../Documents/Life.png; sourceTree = "<group>"; };
+		CBCB13431ECE02CC00E7C391 /* Back Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Back Button.png"; path = "../../../Documents/Back Button.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +153,11 @@
 				CBAEB6291ECA0D4A00D40E9F /* Spikes.png */,
 				CBAEB6211EC41C7600D40E9F /* Brown Cobblestone Background.jpg */,
 				CB9EB4391EB8CFA500B98F4A /* Main.storyboard */,
+				CBCB13431ECE02CC00E7C391 /* Back Button.png */,
+				CBCB13391ECD8CDD00E7C391 /* DamageSound.wav */,
+				CBCB133A1ECD8CDD00E7C391 /* Egg Collect Sound.wav */,
+				CBCB133B1ECD8CDD00E7C391 /* FallingSound.wav */,
+				CBCB133C1ECD8CDD00E7C391 /* Life.png */,
 				CBC595FA1ECC131700D0781D /* Mute Icon.png */,
 				CBC595FB1ECC131700D0781D /* Sound Icon.png */,
 				CBAEB6231EC41D8500D40E9F /* Grey Cobblestone Background.jpg */,
@@ -306,17 +321,22 @@
 				CBAEB62C1ECA0D4A00D40E9F /* Spikes.png in Resources */,
 				CBC595FD1ECC131700D0781D /* Sound Icon.png in Resources */,
 				CBAEB61C1EC1E3A100D40E9F /* Jump2.mp4 in Resources */,
+				CBCB133D1ECD8CDD00E7C391 /* DamageSound.wav in Resources */,
 				CB9EB4401EB8CFA500B98F4A /* LaunchScreen.storyboard in Resources */,
+				CBCB13401ECD8CDD00E7C391 /* Life.png in Resources */,
 				CB9EB43D1EB8CFA500B98F4A /* Assets.xcassets in Resources */,
 				CBAEB6221EC41C7600D40E9F /* Brown Cobblestone Background.jpg in Resources */,
 				CBAEB62B1ECA0D4A00D40E9F /* Egg.png in Resources */,
 				CBAEB6181EC1E3A100D40E9F /* BasicPlatform.png in Resources */,
 				CBAEB61A1EC1E3A100D40E9F /* Dino.png in Resources */,
+				CBCB13441ECE02CC00E7C391 /* Back Button.png in Resources */,
 				CBC595FC1ECC131700D0781D /* Mute Icon.png in Resources */,
 				CB9EB43B1EB8CFA500B98F4A /* Main.storyboard in Resources */,
 				CBAEB6241EC41D8500D40E9F /* Grey Cobblestone Background.jpg in Resources */,
 				CBAEB6191EC1E3A100D40E9F /* BasicPlatform2.png in Resources */,
 				CBAEB61B1EC1E3A100D40E9F /* Jump.mp4 in Resources */,
+				CBCB133E1ECD8CDD00E7C391 /* Egg Collect Sound.wav in Resources */,
+				CBCB133F1ECD8CDD00E7C391 /* FallingSound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +514,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Dino Dungeon/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "th3bigb.Dino-Dungeon";
@@ -505,6 +526,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = "Dino Dungeon/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "th3bigb.Dino-Dungeon";
