@@ -14,6 +14,8 @@
 
 @implementation ViewController
 
+
+// From the SystemSoundIDs, this creates a function to play the sounds
 -(IBAction)jumpSound:(id)sender
 {
     AudioServicesPlaySystemSound(jumpButton);
@@ -39,6 +41,7 @@
     AudioServicesPlaySystemSound(Music);
 }
 
+// Sets the jumpvalue, if the jump button is pressed it becomes disbaled for 0.35 seconds then re-enabled
 -(IBAction)jumpcode:(id)sender
 {
     jumpvalue = 28;
@@ -52,9 +55,14 @@
 
 -(void)fallingcode
 {
+    // This minuses 5 from the jump value in regards to the fallingtimer
     jumpvalue = jumpvalue - 5;
+    
+    // Sets Position of Dino after Jumping
     Dino.center = CGPointMake(Dino.center.x, Dino.center.y -jumpvalue);
     
+    
+    // Creates a frame around the floor and 10 platforms. When Dino intersects it sets new position
     if(CGRectIntersectsRect(Dino.frame, Floor.frame)){
         jumpvalue = 0;
         Dino.center = CGPointMake(Dino.center.x, Floor.center.y - 45);
@@ -110,6 +118,7 @@
             Dino.center = CGPointMake(Dino.center.x, Platform10.center.y - 35);
     }
     
+    // When Dino intersects with Egg, play eggCollect Sound and create alertview
     if (CGRectIntersectsRect(Dino.frame, Egg.frame)){
         Egg.center = CGPointMake(Egg.center.x, Egg.center.y - 500);
         AudioServicesPlaySystemSound(eggCollect);
@@ -127,6 +136,7 @@
         [self presentViewController:alert animated:YES completion:nil];
     }
     
+    // When Dino intersects with Fall, play Falling Sound and create alertview as become 0
     if (CGRectIntersectsRect(Dino.frame, Fall.frame)){
         
         life = life - 4;
@@ -160,6 +170,7 @@
 
     }
     
+        // When Dino intersects with Spikes, play Damage Sound and create alertview when lives = 0
         if (CGRectIntersectsRect(Dino.frame, Spikes.frame)){
             
             life = life - 1;
@@ -188,7 +199,7 @@
     }
 }
 
-
+// When Dino intersects with platforms, change value of the x-axis in regards to Dino. This makes it so Dino can't walk through plaforms.
 -(void)goleft{
     Dino.center = CGPointMake(Dino.center.x - 7, Dino.center.y);
     
@@ -233,18 +244,19 @@
     }
 }
 
+// Holds timer function for goleft
 -(IBAction)startleft
 {
     lefttimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(goleft) userInfo:nil repeats:YES];
 }
 
-
+// Invalidates lefttimer
 -(IBAction)stopleft
 {
     [lefttimer invalidate];
 }
 
-
+// When Dino intersects with platforms, change value of the x-axis in regards to Dino. This makes it so Dino can't walk through plaforms.
 -(void)goright{
     Dino.center = CGPointMake(Dino.center.x + 7, Dino.center.y);
     
@@ -289,12 +301,13 @@
     }
 }
 
+// Holds timer function for goright
 -(IBAction)startright
 {
     righttimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(goright) userInfo:nil repeats:YES];
 }
 
-
+// Invalidates righttimer
 -(IBAction)stopright
 {
     [righttimer invalidate];
@@ -303,10 +316,14 @@
 
 - (void)viewDidLoad {
     
+    //Sets life value
     life = 3;
+    //Life label display
     Life.text = [NSString stringWithFormat:@"%i", life];
     
-    NSURL * gameMusic = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"DinoDungeonGameMusic" ofType:@"wav"]];
+    
+    // Creates path for music and sounds
+    NSURL * gameMusic = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"DDGameMusic" ofType:@"mp4"]];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)gameMusic, & Music);
     
     NSURL * jumpSound = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"Jump" ofType:@"mp4"]];
@@ -323,7 +340,8 @@
     
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-        
+    
+    //Sets fallingtimer
     fallingtimer = [NSTimer scheduledTimerWithTimeInterval:0.05 target:self selector:@selector(fallingcode) userInfo:nil repeats:YES];
     
 }

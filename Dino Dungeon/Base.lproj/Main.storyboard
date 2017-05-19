@@ -109,11 +109,11 @@
                                 <rect key="frame" x="32" y="62" width="615" height="293"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <mutableString key="text">Welcome to Dino Dungeon! In this game you will play as Dino, a small dinosaur who is trying to retrieve his eggs which have been stolen by an unknown group of monsters. Little is known about these monsters, as they seem to of come out of nowhere and live secluded in their dungeons. It is up to you to battle your way through their dungeons to retrieve the stolen eggs before it is too late!
+                                <string key="text">Welcome to Dino Dungeon! In this game you will play as Dino, a small dinosaur who is trying to retrieve his eggs which have been stolen by an unknown group of monsters. Little is known about these monsters, as they seem to of come out of nowhere and live secluded in their dungeons. It is up to you to battle your way through their dungeons to retrieve the stolen eggs before it is too late!
 
 Use the left/right and jump button to move Dino around in the levels to get to the stolen Egg!   During your adventure be careful of Spikes and Falling Zones. If you come in contact with the Spikes monster, you will lose 1 of your 3 lives. If you fall off the level you will lose all of your lives immediately!
 
-					                           Have Fun! </mutableString>
+					                           Have Fun! </string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -288,10 +288,6 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Egg.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMe-zl-U9I">
-                                <rect key="frame" x="625" y="74" width="35" height="38"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="TtO-rh-nVi">
                                 <rect key="frame" x="92" y="307" width="50" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -344,14 +340,10 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                                 <rect key="frame" x="449" y="188" width="50" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeH-Vl-lAj" userLabel="Music">
-                                <rect key="frame" x="308" y="18" width="50" height="50"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Egg.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMe-zl-U9I">
+                                <rect key="frame" x="625" y="74" width="35" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Sound Icon.png"/>
-                                <connections>
-                                    <action selector="gameMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xfb-yB-d1d"/>
-                                </connections>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -697,7 +689,6 @@ Use the left/right and jump button to move Dino around in the levels to get to t
         <image name="Egg.png" width="111" height="128"/>
         <image name="Grey Cobblestone Background.jpg" width="626" height="626"/>
         <image name="Life.png" width="298" height="208"/>
-        <image name="Sound Icon.png" width="2000" height="2000"/>
         <image name="Spikes.png" width="177" height="125"/>
     </resources>
     <inferredMetricsTieBreakers>
