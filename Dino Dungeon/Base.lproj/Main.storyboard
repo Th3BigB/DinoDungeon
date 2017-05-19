@@ -68,11 +68,6 @@
                                 <rect key="frame" x="474" y="148" width="120" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWd-GE-yoM">
-                                <rect key="frame" x="20" y="317" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="Sound Icon.png"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dino.png" translatesAutoresizingMaskIntoConstraints="NO" id="eQ6-D2-nVs">
                                 <rect key="frame" x="46" y="148" width="90" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -175,7 +170,7 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="pip-4p-U1t" kind="presentation" id="MYt-fj-MTd"/>
+                                    <segue destination="nP2-Eq-Ou6" kind="presentation" id="cq0-Gd-4xp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khw-c3-pWL">
@@ -186,7 +181,7 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="nP2-Eq-Ou6" kind="presentation" id="x8T-XI-on8"/>
+                                    <segue destination="pip-4p-U1t" kind="presentation" id="J6t-K2-2KO"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SELECT LEVEL" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Q4-wX-hGQ">
@@ -231,6 +226,14 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Grey Cobblestone Background.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="xJe-LM-YNM">
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="zR7-Xv-PFE">
+                                <rect key="frame" x="562" y="135" width="50" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="ePp-Xu-hmp">
+                                <rect key="frame" x="668" y="1" width="50" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CbP-tL-EmD">
@@ -285,6 +288,10 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                                 <nil key="highlightedColor"/>
                                 <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Egg.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMe-zl-U9I">
+                                <rect key="frame" x="625" y="74" width="35" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="TtO-rh-nVi">
                                 <rect key="frame" x="92" y="307" width="50" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -294,7 +301,7 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="BZp-HB-ZeK">
-                                <rect key="frame" x="553" y="130" width="50" height="20"/>
+                                <rect key="frame" x="617" y="110" width="50" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uad-76-swd">
@@ -330,17 +337,21 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HS5-Tt-gG6">
-                                <rect key="frame" x="190" y="28" width="62" height="50"/>
+                                <rect key="frame" x="-92" y="368" width="850" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="cUa-dr-RdJ">
                                 <rect key="frame" x="449" y="188" width="50" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Egg.png" translatesAutoresizingMaskIntoConstraints="NO" id="JMe-zl-U9I">
-                                <rect key="frame" x="-20" y="294" width="35" height="38"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MeH-Vl-lAj" userLabel="Music">
+                                <rect key="frame" x="308" y="18" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <state key="normal" title="Button" image="Sound Icon.png"/>
+                                <connections>
+                                    <action selector="gameMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xfb-yB-d1d"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -355,8 +366,10 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                         <outlet property="Platform" destination="TtO-rh-nVi" id="QRc-Hm-0sh"/>
                         <outlet property="Platform10" destination="cuI-dd-yxp" id="GcE-4f-pqf"/>
                         <outlet property="Platform2" destination="dLR-k5-7SD" id="WgF-Yc-xz8"/>
+                        <outlet property="Platform3" destination="zR7-Xv-PFE" id="FRy-rz-fy4"/>
                         <outlet property="Platform4" destination="BZp-HB-ZeK" id="ekW-SL-kIt"/>
                         <outlet property="Platform5" destination="Uad-76-swd" id="ogH-jK-qKI"/>
+                        <outlet property="Platform6" destination="ePp-Xu-hmp" id="xvd-9E-P4F"/>
                         <outlet property="Platform7" destination="PIv-oX-NyO" id="DAd-ek-Mfk"/>
                         <outlet property="Platform8" destination="r8i-sa-ozO" id="9zJ-Ua-Il1"/>
                         <outlet property="Platform9" destination="cUa-dr-RdJ" id="U3K-Nl-B8a"/>
@@ -365,7 +378,7 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1334" y="-1276"/>
+            <point key="canvasLocation" x="1333.5832083958021" y="-1276"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hx0-oi-k0j">
@@ -393,8 +406,12 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                                     <segue destination="YA6-5L-zlX" kind="presentation" id="CnK-Of-D26"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dino.png" translatesAutoresizingMaskIntoConstraints="NO" id="4g5-5r-2Ln">
+                                <rect key="frame" x="20" y="283" width="40" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="x7m-qi-tQN">
-                                <rect key="frame" x="-626" y="335" width="704" height="40"/>
+                                <rect key="frame" x="-28" y="335" width="106" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XW5-Ov-DMf">
@@ -423,10 +440,6 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                                     <action selector="stopright" destination="pip-4p-U1t" eventType="touchUpInside" id="VZK-tp-SI1"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Spikes.png" translatesAutoresizingMaskIntoConstraints="NO" id="JjN-AX-XsC">
-                                <rect key="frame" x="436" y="177" width="50" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBZ-zH-94L">
                                 <rect key="frame" x="597" y="16" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -436,7 +449,7 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                                 <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Egg.png" translatesAutoresizingMaskIntoConstraints="NO" id="q81-Gv-pJY">
-                                <rect key="frame" x="377" y="209" width="35" height="38"/>
+                                <rect key="frame" x="625" y="95" width="35" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="EOA-Pc-jvu">
@@ -447,20 +460,8 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                                 <rect key="frame" x="213" y="278" width="50" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="L9o-Cu-wEs">
-                                <rect key="frame" x="28" y="80" width="50" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="C4z-sa-Cas">
-                                <rect key="frame" x="164" y="80" width="50" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="pYI-jS-32h">
-                                <rect key="frame" x="502" y="177" width="50" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="htK-Sd-n8f">
-                                <rect key="frame" x="92" y="80" width="50" height="20"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="kuR-tm-Dcw">
+                                <rect key="frame" x="666" y="0.0" width="50" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="cnl-Cb-i11">
@@ -468,15 +469,11 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="N6r-Fk-Bmi">
-                                <rect key="frame" x="572" y="139" width="50" height="20"/>
+                                <rect key="frame" x="617" y="132" width="50" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="RBX-rw-9pX">
                                 <rect key="frame" x="436" y="212" width="50" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="vLJ-ZH-8eu">
-                                <rect key="frame" x="222" y="80" width="50" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L7c-mP-cGG">
@@ -496,11 +493,15 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eOZ-oa-n5a">
-                                <rect key="frame" x="80" y="371" width="62" height="50"/>
+                                <rect key="frame" x="-120" y="371" width="994" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dino.png" translatesAutoresizingMaskIntoConstraints="NO" id="4g5-5r-2Ln">
-                                <rect key="frame" x="20" y="283" width="40" height="50"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Spikes.png" translatesAutoresizingMaskIntoConstraints="NO" id="JjN-AX-XsC">
+                                <rect key="frame" x="327" y="212" width="50" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="pYI-jS-32h">
+                                <rect key="frame" x="509" y="177" width="50" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -517,20 +518,21 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                         <outlet property="Platform" destination="EOA-Pc-jvu" id="Ln1-Zo-dNL"/>
                         <outlet property="Platform10" destination="RBX-rw-9pX" id="8Cu-b7-RKM"/>
                         <outlet property="Platform2" destination="ESK-tg-Q7d" id="fVU-PZ-iFT"/>
-                        <outlet property="Platform3" destination="L9o-Cu-wEs" id="aZl-wD-IEe"/>
-                        <outlet property="Platform4" destination="C4z-sa-Cas" id="S9s-HC-atx"/>
+                        <outlet property="Platform3" destination="kuR-tm-Dcw" id="wpM-Sf-DDo"/>
                         <outlet property="Platform5" destination="pYI-jS-32h" id="bKm-2I-TPa"/>
-                        <outlet property="Platform6" destination="htK-Sd-n8f" id="gcC-aE-RSd"/>
                         <outlet property="Platform7" destination="cnl-Cb-i11" id="xSB-rk-Tek"/>
-                        <outlet property="Platform8" destination="vLJ-ZH-8eu" id="wBr-s8-Vn0"/>
                         <outlet property="Platform9" destination="N6r-Fk-Bmi" id="G42-Jo-AYz"/>
                         <outlet property="Right" destination="97b-nO-1Bb" id="oQf-NG-PP8"/>
                         <outlet property="Spikes" destination="JjN-AX-XsC" id="B3Y-Og-mgH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UOL-W0-s17" sceneMemberID="firstResponder"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BasicPlatform.png" id="XdZ-DX-hTw">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
             </objects>
-            <point key="canvasLocation" x="1334" y="-535"/>
+            <point key="canvasLocation" x="1334" y="265"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="NA8-YL-0LM">
@@ -548,12 +550,22 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                                 <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ix3-mu-9Ec">
+                                <rect key="frame" x="20" y="20" width="48" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back" image="Back Button.png">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="YA6-5L-zlX" kind="presentation" id="QQz-aP-sbX"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Dino.png" translatesAutoresizingMaskIntoConstraints="NO" id="k6r-9S-LBZ">
                                 <rect key="frame" x="28" y="283" width="40" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="ytg-wi-Srw">
-                                <rect key="frame" x="-626" y="335" width="704" height="40"/>
+                                <rect key="frame" x="-19" y="335" width="452" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzV-WK-n5V">
@@ -583,7 +595,7 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Spikes.png" translatesAutoresizingMaskIntoConstraints="NO" id="lvu-aJ-HMt">
-                                <rect key="frame" x="436" y="177" width="50" height="40"/>
+                                <rect key="frame" x="92" y="293" width="50" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJA-MN-grT">
@@ -595,27 +607,23 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                                 <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Egg.png" translatesAutoresizingMaskIntoConstraints="NO" id="8jb-lz-Kr8">
-                                <rect key="frame" x="580" y="103" width="35" height="38"/>
+                                <rect key="frame" x="99" y="43" width="35" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="fRd-ox-AL6">
-                                <rect key="frame" x="152" y="298" width="50" height="20"/>
+                                <rect key="frame" x="189" y="298" width="50" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="oFq-OQ-ceB">
-                                <rect key="frame" x="213" y="278" width="50" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="MwO-1g-4Ey">
-                                <rect key="frame" x="28" y="80" width="50" height="20"/>
+                                <rect key="frame" x="189" y="139" width="50" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="wsn-do-6dd">
-                                <rect key="frame" x="164" y="80" width="50" height="20"/>
+                                <rect key="frame" x="129" y="108" width="50" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="JEN-FW-AJC">
-                                <rect key="frame" x="502" y="177" width="50" height="20"/>
+                                <rect key="frame" x="253" y="177" width="50" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="qhg-sG-g4R">
@@ -623,19 +631,7 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="4bP-j1-OrM">
-                                <rect key="frame" x="272" y="250" width="160" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="oEx-cM-WtP">
-                                <rect key="frame" x="572" y="139" width="50" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="0kb-fL-9FK">
-                                <rect key="frame" x="436" y="212" width="50" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="VAS-pt-60Q">
-                                <rect key="frame" x="222" y="80" width="50" height="20"/>
+                                <rect key="frame" x="253" y="270" width="180" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RbN-hK-Iou">
@@ -655,19 +651,17 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ywy-E9-1LD">
-                                <rect key="frame" x="80" y="371" width="62" height="50"/>
+                                <rect key="frame" x="-115" y="371" width="974" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ix3-mu-9Ec">
-                                <rect key="frame" x="20" y="20" width="48" height="46"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="0kb-fL-9FK">
+                                <rect key="frame" x="383" y="220" width="50" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back" image="Back Button.png">
-                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="YA6-5L-zlX" kind="presentation" id="QQz-aP-sbX"/>
-                                </connections>
-                            </button>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BasicPlatform.png" translatesAutoresizingMaskIntoConstraints="NO" id="wAd-1x-LNS">
+                                <rect key="frame" x="-52" y="0.0" width="50" height="375"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -682,20 +676,18 @@ Use the left/right and jump button to move Dino around in the levels to get to t
                         <outlet property="Platform" destination="fRd-ox-AL6" id="FA9-yH-uwF"/>
                         <outlet property="Platform10" destination="0kb-fL-9FK" id="Fmd-gY-cbE"/>
                         <outlet property="Platform2" destination="oFq-OQ-ceB" id="vCB-uz-shg"/>
-                        <outlet property="Platform3" destination="MwO-1g-4Ey" id="Fs4-Cb-hV1"/>
+                        <outlet property="Platform3" destination="wAd-1x-LNS" id="xA1-JC-vI5"/>
                         <outlet property="Platform4" destination="wsn-do-6dd" id="ixS-jb-9XR"/>
                         <outlet property="Platform5" destination="JEN-FW-AJC" id="9m6-zL-EuR"/>
                         <outlet property="Platform6" destination="qhg-sG-g4R" id="m1I-sE-Xd5"/>
                         <outlet property="Platform7" destination="4bP-j1-OrM" id="ga0-Ld-lKD"/>
-                        <outlet property="Platform8" destination="VAS-pt-60Q" id="hjU-OC-0QE"/>
-                        <outlet property="Platform9" destination="oEx-cM-WtP" id="Uxv-r7-SFI"/>
                         <outlet property="Right" destination="QNE-fj-KDq" id="bAI-Kz-ftX"/>
                         <outlet property="Spikes" destination="lvu-aJ-HMt" id="8LB-I2-FvX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ocH-i8-lvz" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1334" y="194"/>
+            <point key="canvasLocation" x="1333.5832083958021" y="-535.20000000000005"/>
         </scene>
     </scenes>
     <resources>
@@ -710,6 +702,6 @@ Use the left/right and jump button to move Dino around in the levels to get to t
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="tDY-8A-fS9"/>
-        <segue reference="CnK-Of-D26"/>
+        <segue reference="O9k-zM-3OP"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -34,6 +34,11 @@
     AudioServicesPlaySystemSound(Falling);
 }
 
+-(IBAction)gameMusic:(id)sender
+{
+    AudioServicesPlaySystemSound(Music);
+}
+
 -(IBAction)jumpcode:(id)sender
 {
     jumpvalue = 28;
@@ -159,10 +164,10 @@
             
             life = life - 1;
             AudioServicesPlaySystemSound(Damage);
-            
             Spikes.center = CGPointMake(Spikes.center.x, Spikes.center.y - 500);
+          
             
-        if (life >= 1) {
+        if (life >= 0) {
             Life.text = [NSString stringWithFormat:@"%i", life];
             }
             
@@ -177,12 +182,10 @@
             [alert addAction:button];
 
             if (button){
-                UIViewController* levelController = [[UIViewController alloc] init];
-                [self presentViewController:levelController animated:YES completion:nil];
+
             }
-            }
-            
-            }
+        }
+    }
 }
 
 
@@ -303,6 +306,8 @@
     life = 3;
     Life.text = [NSString stringWithFormat:@"%i", life];
     
+    NSURL * gameMusic = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"DinoDungeonGameMusic" ofType:@"wav"]];
+    AudioServicesCreateSystemSoundID((__bridge CFURLRef)gameMusic, & Music);
     
     NSURL * jumpSound = [NSURL fileURLWithPath: [[NSBundle mainBundle] pathForResource:@"Jump" ofType:@"mp4"]];
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)jumpSound, & jumpButton);

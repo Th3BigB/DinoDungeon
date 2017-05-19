@@ -16,6 +16,9 @@ int life;
 {
     IBOutlet UIImageView *Dino;
     IBOutlet UIImageView *Spikes;
+    IBOutlet UIImageView *Spikes2;
+    IBOutlet UIImageView *Spikes3;
+    IBOutlet UIImageView *Spikes4;
     IBOutlet UIImageView *Egg;
     IBOutlet UIImageView *Floor;
     IBOutlet UIImageView *Fall;
@@ -45,10 +48,9 @@ int life;
     SystemSoundID Damage;
     SystemSoundID Falling;
     SystemSoundID eggCollect;
+    SystemSoundID Music;
     
 }
-
-// @property (nonatomic, strong) IBOutletCollection(UIImageView) NSArray *Platform;//
 
 
 -(void)goleft;
@@ -66,6 +68,7 @@ int life;
 -(IBAction)damageSound:(id)sender;
 -(IBAction)fallSound:(id)sender;
 -(IBAction)eggSound:(id)sender;
+-(IBAction)gameMusic:(id)sender;
 
 @end
 
